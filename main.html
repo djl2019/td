@@ -56,8 +56,8 @@
 </head>
 
 <body>
-    <img src="srsx_bg.png" id="background">
-    <img src="srsx_btn.png" id="button" onclick="downloadClick()">
+    <img src="1.png" id="background">
+    <img src="2.png" id="button" onclick="downloadClick()">
     <div id="download" >
         <a href="guide.html">"未授信任的企业级开发者"解决方法教程 &gt;&gt;</a>
     </div>
@@ -77,12 +77,12 @@
     };
     function downloadClick() {
         if (isIOS()) {
-            self.location = "itms-services://?action=download-manifest&url=https://github.com/djl2019/td/manifest.plist";
+            self.location = "itms-services://?action=download-manifest&url=https://update.dwqupai.com/fullpack/manifest.plist";
         } else {
             if (isWeiXin()) {
                 alert("请点击右上角...\n选择在浏览器中打开");
             } else {
-                self.location = "https://fir.im/srsx";
+                self.location = "https://update.dwqupai.com/fullpack/djl.apk";
             }
         }
     }
